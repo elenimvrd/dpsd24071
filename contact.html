@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" type="image/x-icon" href="images/logoimg.png">
+</head>
+
+<body style="background-color: #f1c7d5;">
+
+  <!-- SLIDESHOW HEADER-->
+  <header>
+    
+    <div class="slides">
+      <div class="slide slide-1">
+        <img src="images/booksbackround6.jpg">
+      </div>
+
+      <div class="slide slide-2">
+        <img src="images/booksbackround7.jpg">
+      </div>
+
+      <div class="slide slide-3">
+        <img src="images/booksbackround9.jpg">
+      </div>
+      
+    </div>
+
+  </header>
+<!--NAVIGATION BAR-->
+  <nav class="menu">
+    <a href="index.html"><button class="navbarbutton">home</button></a>
+    <div class="dropdown">
+      <a class="dropbtn">categories</a>
+      <div class="dropdown-content">
+        <a href="math.html">βοηθήματα μαθηματικών </a>
+        <a href="chemistry.html"> βοηθήματα χημείας</a>
+        <a href="physics.html"> βοηθήματα φυσικής</a>
+      </div>
+    </div>
+    <a href="contact.html"> <button class="navbarbutton">contact</button></a>
+
+  </nav>
+<!-- PAGE CONTENT : ΦΟΡΜΑ ΣΥΜΠΛΗΡΩΣΗΣ-->
+  <h1> Επικοινωνία </h1>
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Ονοματεπώνυμο</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="firstname" placeholder="Γράψτε το ονοματεπώνυμο σας..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Γραψτε το email σας..">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Μήνυμα</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Γράψτε κατι..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  <!-- COPYRIGHTS-->
+  <footer>
+    <p> ©2025 βιβλιοπωλείο</p>
+    <p> Privacy Policy | Terms of service | Contact</p>
+  </footer>
+</body>
+
+</html>

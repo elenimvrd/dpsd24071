@@ -1,0 +1,188 @@
+
+/*SLIDESHOW HEADER SETTINGS*/
+.slides {
+    width: 100%;
+        height: 20vh;
+        overflow: hidden;
+        position: relative;
+        border: 4px solid #9b5974;
+        box-shadow: #d89dbe 0px 5px 15px;
+    }
+    
+    .slide {
+        position: absolute;
+        height: 100%;
+        opacity: 0;
+        inset: 0;
+        animation: slide-show 12s infinite;
+    }
+    
+    .slide-2 {animation-delay: 2s;}
+    .slide-3 {animation-delay: 8s;}
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    @keyframes slide-show {
+        0% {
+            opacity: 0;
+        }
+    
+        10% {
+            opacity: 1;
+        }
+    
+         30% {
+            opacity: 1;
+            scale: 1.03;
+        }
+    
+        50% {
+            opacity: 0;
+    
+        }
+    
+    }
+    
+
+/* NAVIGATION BAR SETTINGS*/
+.menu {
+    font-size: 200%;
+    color: #582848;
+    ;
+    background-color: #D99BB4;
+
+}
+
+:link {
+    color: #582848;
+}
+
+a:hover {
+
+    background-color: #D9B9C7;
+
+
+}
+
+button.navbarbutton {
+    border: 0ch;
+    font-size: 100%;
+    color: #582848;
+    background-color: #D99BB4;
+font-family: serif;
+
+}
+
+button:hover {
+    background-color: #D9B9C7;
+}
+
+/*NAVIGATION BAR : DROPDOWN MENU*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e6cbd4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #582848;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #582848;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #d89dbe;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #D9B9C7;
+}
+
+
+
+/* PAGE CONTENT*/
+
+.bookimgdetail {
+    float: left;
+    width: 300px;
+    height: fit-content;
+    padding: 30px;
+}
+
+p {
+    color: #582848;
+}
+
+.title {
+    font-weight: bolder;
+    color: #582848;
+    font-size: 200%;
+
+}
+
+.title2 {
+    background-color: #d89dbe;
+    clear: left;
+    font-weight: bolder;
+    color: #582848;
+    font-size: 200%;
+
+}
+
+div.periexomeno {
+    clear: left;
+    text-align: left;
+    width: 1500px;
+    color: #582848;
+    font-size: 130%;
+}
+
+.author {
+    color: #582848;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.price {
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 160%;
+}
+
+button.agora {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    color: #582848;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #D99BB4;
+
+}
+
+/* COPYRIGHT SETINGS*/
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #9b5974;
+    clear: left;
+    text-align: center;
+}
