@@ -1,53 +1,57 @@
-
 /*SLIDESHOW HEADER SETTINGS*/
 .slides {
     width: 100%;
-        height: 20vh;
-        overflow: hidden;
-        position: relative;
-        border: 4px solid #9b5974;
-        box-shadow: #d89dbe 0px 5px 15px;
-    }
-    
-    .slide {
-        position: absolute;
-        height: 100%;
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #9b5974;
+    box-shadow: #d89dbe 0px 5px 15px;
+}
+
+.slide {
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 12s infinite;
+}
+
+.slide-2 {
+    animation-delay: 2s;
+}
+
+.slide-3 {
+    animation-delay: 8s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@keyframes slide-show {
+    0% {
         opacity: 0;
-        inset: 0;
-        animation: slide-show 12s infinite;
     }
-    
-    .slide-2 {animation-delay: 2s;}
-    .slide-3 {animation-delay: 8s;}
-    
-    .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+
+    10% {
+        opacity: 1;
     }
-    
-    @keyframes slide-show {
-        0% {
-            opacity: 0;
-        }
-    
-        10% {
-            opacity: 1;
-        }
-    
-         30% {
-            opacity: 1;
-            scale: 1.03;
-        }
-    
-        50% {
-            opacity: 0;
-    
-        }
-    
+
+    30% {
+        opacity: 1;
+        scale: 1.03;
     }
-    
+
+    50% {
+        opacity: 0;
+
+    }
+
+}
+
 
 /* NAVIGATION BAR SETTINGS*/
 .menu {
@@ -74,7 +78,7 @@ button.navbarbutton {
     font-size: 100%;
     color: #582848;
     background-color: #D99BB4;
-font-family: serif;
+    font-family: serif;
 
 }
 
@@ -162,7 +166,7 @@ div.periexomeno {
 }
 
 .price {
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 160%;
 }
 
@@ -185,4 +189,16 @@ footer {
     background-color: #9b5974;
     clear: left;
     text-align: center;
+}
+
+
+/*RESPONSIVE LAYOUT*/
+@media only screen and (max-width: 480px) {
+
+    div.periexomeno {
+        width: 500px;
+        text-align: center;
+        font-size: 70%;
+    }
+
 }
